@@ -1,0 +1,508 @@
+@font-face {
+  font-family: Glametrix;
+  src: url("./assets/GlametrixLight-0zjo.otf");
+}
+
+@font-face {
+  font-family: Brandink;
+  src: url("./assets/BrandinkSansLight-MV4mr.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Brandink;
+  color: white;
+  z-index: 1;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hidden {
+  z-index: 0;
+  opacity: 0;
+  transition: 600ms ease-out;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.white {
+  filter: invert(1);
+}
+
+#search-bar {
+  z-index: 2;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 25%;
+  height: 10%;
+}
+
+#search-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#search-entry {
+  border-radius: 20px;
+  width: 78%;
+  height: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#search-entry:focus-visible {
+  border: rgb(179, 131, 226), 1px;
+}
+
+#search-btn {
+  border-radius: 20px;
+  width: 20%;
+  height: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: 1px 5px 15px black;
+}
+
+h3,
+p,
+tr {
+  font-family: Glametrix;
+  font-weight: 200;
+  text-shadow: 1px 5px 15px black;
+}
+
+/*
+
+GREETING TEXTS & CONTAINER 
+
+*/
+
+#greet-time {
+  height: fit-content;
+  width: 45%;
+  position: relative;
+  top: -10%;
+}
+
+#greeting {
+  font-size: 64px;
+  font-weight: 100;
+  margin-top: 45px;
+}
+
+#currentTime {
+  font-size: 120px;
+  font-weight: 100;
+  margin-top: 45px;
+}
+
+/* 
+
+    WEATHER TAB & TEXT
+
+ */
+
+#weather-container {
+  position: absolute;
+  width: 26%;
+  height: 8%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  top: 3%;
+  left: 2%;
+  opacity: 0.4;
+  transition: ease-in-out 600ms;
+}
+
+#weather-container:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+#weather-icon-container {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-shadow: 1px 5px 10px black;
+}
+
+#weather-icon {
+  width: auto;
+  height: 100%;
+  text-shadow: 1px 5px 15px black;
+  scale: 1;
+}
+
+#weather-txt-container {
+  margin-top: 1%;
+  width: 66%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#weather-txt {
+  font-size: 36px;
+}
+
+/* 
+
+TODO LIST FEATURES
+
+*/
+
+#todo-container {
+  height: 100px;
+  width: 25%;
+  background: transparent;
+  border-radius: 10px;
+  position: fixed;
+  top: 80%;
+  left: 10%;
+  opacity: 0.4;
+  transition: 500ms ease-in-out;
+}
+
+#todo-container:hover {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+}
+
+#todo-container:hover .todos {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+}
+
+#todo-list {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #d5d5d5;
+}
+
+.input:focus {
+  outline-color: rgb(179, 131, 226);
+}
+
+.todos {
+  height: fit-content;
+  max-height: 250px;
+  overflow-y: scroll;
+  width: 25%;
+  position: fixed;
+  bottom: 20%;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+/*
+
+CALENDAR SECTION 
+
+*/
+
+#calendar-section {
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  transform: translate(180%, 80%);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 1000ms ease-in-out;
+}
+
+#today-container {
+    opacity: .4;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1em 1em 0 0;
+  color: #fff;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-origin: bottom;
+  transform: scale(1);
+  transition: 1000ms ease-in-out;
+}
+
+#today-container:hover {
+    opacity: 1;
+}
+
+#calendar-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(43, 43, 43, 0.5);
+  border-radius: 0 0 1em 1em;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #fff;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #fff;
+  color: #555;
+  display: inline-block;
+  padding: 10px 5px;
+  transform-origin: top;
+  transition: 1000ms ease-in-out;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  /* Targets all td elements  */
+  padding: 0;
+  color: antiquewhite;
+}
+
+.weekday {
+  font-family: Glametrix;
+  font-size: 36px;
+  padding-bottom: 20px;
+  text-transform: lowercase;
+}
+
+.day {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1em;
+  font-family: Brandink;
+}
+
+.month {
+  font-family: Glametrix;
+  font-size: 56px;
+  line-height: 1em;
+  text-transform: lowercase;
+}
+
+.calendar {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+
+.calendar thead {
+  /*Finds .calendar class and goes to thead child */
+  max-width: 100%;
+  position: relative;
+  height: 15%;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.calendar thead tr {
+  /*Targets the row of Weekdays*/
+  position: relative;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+.calendar thead tr td {
+  font-size: 22px;
+}
+
+.calendar tbody tr td {
+  /*Targets each day of the month*/
+  width: 12%;
+  height: 100%;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 16px;
+}
+
+.calendar tbody tr {
+  /*Targets each row in the month*/
+  width: 100%;
+  height: 20%;
+}
+
+.calendar tbody {
+  width: 100%;
+  height: 80%;
+}
+
+.calendar tbody td:hover {
+  background: #cacaca;
+  color: #fff;
+  cursor: default;
+}
+
+.calendar tbody td.rm-hov:hover {
+  /*removes hover effect from non-filled days in month table*/
+  background: none;
+}
+
+.currentDay {
+  color: #9d8a6e;
+  font-weight: bold;
+  border-bottom: solid 2px #9d8a6e;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.calendar tbody td.currentDay:hover {
+  background: #555555;
+  color: bisque;
+  cursor: default;
+}
+
+.prev-month,
+.next-month {
+  color: #cacaca;
+}
+
+/*
+
+OPEN CALENDAR MECHANICS
+
+*/
+
+#calendar-section.open {
+  height: 60%;
+  width: 20%;
+  transform: translate(180%, 20%);
+  transition: 1000ms ease-in-out;
+}
+
+#calendar-section.open #today-container {
+  height: 50%;
+  opacity: 1;
+  width: 100%;
+  transform-origin: bottom;
+  transition: 1000ms ease-in-out;
+}
+
+#calendar-section.open #calendar-container {
+  height: 50%;
+  width: 100%;
+  transform-origin: top;
+  transform: translate(0, 100%);
+  opacity: 1;
+  transition: 1000ms ease-in-out;
+}
+
+/* 
+
+CREDITS BTN 
+
+*/
+
+#credit-container {
+  position: relative;
+  width: 5%;
+  height: 3%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 3%;
+  border: none;
+}
+
+#credits-link {
+  position: relative;
+  text-decoration: none;
+  color: #d8c9b3c8;
+  letter-spacing: 2px;
+}
+
+/*
+  
+  webkits 
+  
+  */
+
+.todos::-webkit-scrollbar {
+  width: 0.2em;
+  background-color: #f5f5f5;
+}
+
+.todos::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.todos::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}

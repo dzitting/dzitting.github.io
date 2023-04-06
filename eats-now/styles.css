@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+  background-color: rgb(250, 96, 75);
+  width: 90vw;
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+  width: inherit;
+}
+
+header {
+  height: 10vh;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.055);
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  padding: 50px 10px;
+  overflow: hidden;
+}
+
+button {
+  background-color: white;
+  color: black;
+  width: 5.5rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  padding: 1rem, 1rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.black {
+  color: black;
+}
+
+button.selected {
+  background-color: white;
+}
+
+/*
+
+main 
+
+*/
+
+#navbar {
+  margin-top: 1%;
+  height: inherit;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+#logo--container {
+  height: inherit;
+  width: 20%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#logo {
+  filter: invert(1);
+  height: auto;
+  width: 25%;
+}
+
+#logo-text {
+  text-align: center;
+  margin-left: 2%;
+}
+
+#nav-links--list {
+  width: 55%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+}
+
+#get-started--container {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#get-started-button {
+  min-width: 7rem;
+  min-height: 100%;
+}
+
+#get-started--link {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+
+IMAGES
+
+*/
+
+#main-img--container {
+  height: 65%;
+  width: inherit;
+  display: flex;
+  overflow: hidden;
+}
+
+.img-fig {
+  position: relative;
+  object-position: center center;
+  object-fit: fill;
+  border-radius: 25px;
+  height: 90%;
+  overflow: hidden;
+  margin: 1%;
+}
+
+#fig1 {
+  margin-left: 0;
+  width: 85%;
+}
+
+#pic1 {
+  position: relative;
+  top: -50%;
+  right: 5%;
+  width: 100%;
+  transform: rotate(90deg);
+}
+
+#fig2{
+  width: 50%;
+}
+
+#fig3 {
+  width: 100%;
+  height: 50%;
+}
+
+#stacked--container {
+  margin-top: 1%;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#fig4 {
+  top: 10%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+}
+
+#pic4 {
+  height: 15%;
+  width: 32%;
+  filter: invert(1);
+}
+
+#main-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#text-select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: justify;
+  width: 100%;
+}
+
+#btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-descripts {
+  width: 30%;
+  height: 80%;
+  background-color: transparent;
+  border: white 5px solid;
+}
+
+/* 
+
+GRUB ON CARDS 
+
+*/
+
+.grub-on-card {
+  position: absolute;
+  top: 100%;
+  height: 50%;
+  background-color: white;
+  border-top-right-radius: 75px;
+  padding: 25px;
+}
+
+h3.grub-on-card, h2.grub-on-card{
+  color: black;
+}

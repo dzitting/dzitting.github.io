@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main-style.css" />
+    <title>New Tab</title>
+  </head>
+
+  <body>
+    <section id="search-bar">
+      <form id="search-form" action="https://www.google.com/search" method="get" target="_blank">
+        <input id="search-entry" type="text" name="q" placeholder=" Search Google">
+        <input id="search-btn" target="_blank" type="submit" value="Search">
+      </form>
+    </section>
+    <!-- Greeting Elements & Time  -->
+    <section id="main" class="center">
+      <div id="greet-time">
+        <h1 id="currentTime"></h1>
+        <h1 id="greeting">Hello User!</h1>
+      </div>
+      <!-- Weather Icons & Text  -->
+      <div id="weather-container">
+        <figure id="weather-icon-container">
+          <img
+            id="weather-icon"
+            src="./assets/weatherIcons/cloud.png"
+            class="white"
+          />
+        </figure>
+        <div id="weather-txt-container">
+          <p id="weather-txt">Request Error</p>
+        </div>
+      </div>
+      <!-- To Do List Mechanics/Modals -->
+      <div id="todo-container">
+        <ul class="todos" id="todos"></ul>
+        <form id="todo-list">
+          <input
+            type="text"
+            class="input"
+            id="input"
+            placeholder="Enter your todo"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <!-- The calendar modals  -->
+      <section id="calendar-section" title="Click Me">
+        <div id="calendar-container" class="hidden">
+          <table class="calendar">
+            <thead>
+              <tr>
+                <td>S</td>
+                <td>M</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>F</td>
+                <td>S</td>
+              </tr>
+            </thead>
+
+            <tbody id="calendar-body"></tbody>
+          </table>
+        </div>
+
+        <div id="today-container">
+          <div class="weekday">Calendar</div>
+          <div class="day">Load</div>
+          <div class="month">Error</div>
+        </div>
+      </section>
+
+      <section id="credit-btn"></section>
+          <button id="credit-container">
+            <a title="pdf link to attributions" href="./credits.pdf" target="_blank" id="credits-link"
+              >Credits</a>
+          </button>
+      </section>
+    </section>
+  </body>
+  <script src="./scripts/main-greet.js"></script>
+  <script src="./scripts/weather-request.js"></script>
+  <script src="./scripts/todo.js"></script>
+</html>

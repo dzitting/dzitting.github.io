@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>New Tab</title>
+  </head>
+
+  <body>
+    <!-- THE SETUP MODAL -->
+    <div id="modal-wrapper">
+      <div id="modal-texts">
+        <h2 class="centered" id="hello">Hello</h2>
+        <h3 class="centered" id="thx-msg">
+          Thanks for installing ClearStart Beta.
+          <br />
+          Let's start getting you setup!
+        </h3>
+        <h3 class="centered" id="theme">Choose the theme you like the most.</h3>
+        <h3 id="enter-name-txt" class="centered hidden">
+          What would you like to be called? <br>
+          Please also enter your zip for the current weather.
+        </h3>
+      </div>
+      <!-- GALLERY -->
+      <div id="modal-gallery" class="scroller">
+        <div class="card-wrapper">
+          <div id="content">
+            <figure id="img-container">
+              <img
+                class="card-img"
+                src="./assets/pexels-andy-vu-3244513.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div id="blackout"></div>
+          <div id="main-title">
+            <h2 id="title" class="centered">Sandy</h2>
+          </div>
+          <div id="hov-txt">
+            <button class="choose flex-center"></button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div id="content">
+            <figure id="img-container">
+              <img
+                class="card-img"
+                src="./assets/pexels-creative-vix-9754.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div id="blackout"></div>
+          <div id="main-title">
+            <h2 id="title" class="centered">Airy Mountain</h2>
+          </div>
+          <div id="hov-txt">
+            <button class="choose flex-center"></button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div id="content">
+            <figure id="img-container">
+              <img
+                class="card-img"
+                src="./assets/pexels-francesco-ungaro-2325446.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div id="blackout"></div>
+          <div id="main-title">
+            <h2 id="title" class="centered">Wonders</h2>
+          </div>
+          <div id="hov-txt">
+            <button class="choose flex-center"></button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div id="content">
+            <figure id="img-container">
+              <img
+                class="card-img"
+                src="./assets/pexels-pixabay-462162.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div id="blackout"></div>
+          <div id="main-title">
+            <h2 id="title" class="centered">Pacific Breeze</h2>
+          </div>
+          <div id="hov-txt">
+            <button class="choose flex-center"></button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div id="content">
+            <figure id="img-container">
+              <img
+                class="card-img"
+                src="./assets/pexels-quang-nguyen-vinh-2649403.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div id="blackout"></div>
+          <div id="main-title">
+            <h2 id="title" class="centered">Misty Lakeside</h2>
+          </div>
+          <div id="hov-txt">
+            <button class="choose flex-center"></button>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div id="content">
+            <figure id="img-container">
+              <img
+                class="card-img"
+                src="./assets/pexels-visually-us-1477166.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div id="blackout"></div>
+          <div id="main-title">
+            <h2 id="title" class="centered">Warm Floral</h2>
+          </div>
+          <div id="hov-txt">
+            <button class="choose flex-center"></button>
+          </div>
+        </div>
+      </div>
+      <div id="login-container" class="hidden">
+        <form id="login-form">
+        <input
+          class="nameinput"
+          required
+          maxlength="22"
+          type="text"
+          placeholder="Enter name here"
+        />
+        <input 
+        class="zipinput"
+        required
+        maxlength="5"
+        type="number"
+        step="any"
+        placeholder="Enter Zip Code">
+        </form>
+        <div id="submit-that-cont">
+          <button type="submit" id="submit-that" class="flex-center"></button>
+        </div>
+      </div>
+      
+      <div id="final-txt-container" class="hidden">
+        <h3 id="final-txt" class="centered">
+          Thank you again for installing ClearStart Beta! Please enjoy your new,
+          clean, productive space.
+        </h3>
+        <div class="cont-container">
+          <button id="continue" class="flex-center"></button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Arrows -->
+      <div id="arrow-r">
+        <figure id="arrow-r-container">
+          <img id="arrow-r-icon" class="arrow" src="./assets/next.png" alt="" />
+        </figure>
+      </div>
+      <div id="arrow-l">
+        <figure id="arrow-l-container">
+          <img
+            id="arrow-l-icon"
+            class="arrow move-left"
+            src="./assets/next.png"
+            alt=""
+          />
+        </figure>
+      </div>
+  </body>
+  <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/setup-config.js"></script>
+</html>
