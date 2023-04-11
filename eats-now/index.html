@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link href="styles.css" rel="stylesheet" />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-    <title>Homepage CS50 | PSet</title>
+   <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+   integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+   crossorigin="anonymous"
+   />
+   <link href="styles.css" rel="stylesheet" />
+   <script
+   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"
+   ></script>
+   <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+   crossorigin="anonymous"
+   ></script>
+   <title>Homepage CS50 | PSet | Home</title>
   </head>
   <body>
     <header id="index-header">
@@ -37,19 +38,30 @@
         </figure>
         <ul id="nav-links--list">
           <li class="nav-link-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="./index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-link-item">
-            <a href="#" class="nav-link">Menu</a>
+            <a id="menu-link" href="./menu.html" class="nav-link">Menu</a>
+            <ul class="sub">
+              <li class="sub-link">
+                <a href="./menu.html#breakfast-items">Breakfast</a>
+              </li>
+              <li class="sub-link">
+                <a href="./menu.html#lunch-items">Lunch</a>
+              </li>
+              <li class="sub-link">
+                <a href="./menu.html#dinner-items">Dinner</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-link-item">
-            <a href="#" class="nav-link">Our Services</a>
+            <a href="./services.html" class="nav-link">Our Services</a>
           </li>
           <li class="nav-link-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="./about.html" class="nav-link">About</a>
           </li>
           <li class="nav-link-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
         <div id="get-started--container">
@@ -95,7 +107,7 @@
       </div>
       <div id="main-text-content">
         <div id="text-select-container">
-          <h3 id="get-your-grub-on">Get Your Grub On:</h3>
+          <h2 id="get-your-grub-on">Get Your Grub On:</h2>
           <div id="btn-container">
             <button id="fast-btn" class="main-descripts selected" onclick="makeSelected(event), openFast()">fast</button>
             <button id="delivery-btn" class="main-descripts" onclick="makeSelected(event), openDelivery()">delivery</button>
@@ -103,14 +115,21 @@
           </div>
         </div>
         
-        <h3 id="it-fun">Because it's fun, and you can build stuff!</h3>
+        <h2 id="it-fun">Because it's fun, and you can build stuff!</h2>
       </div>
     </section>
-    <section id="fast-btn-page" class="visibile grub-on-card">
+    <div id="tabs-container">
+      <section id="fast-btn-page" class="visibile grub-on-card">
       <h2 class="black">What is Fast "Grub On"?</h2>
-      <p class="black">
+      <h4 class="black">
         Think of it this way, time from order to food-in-mouth = less than a
-        stomach grumble.
+        stomach grumble. 
+      </h3>
+      <p class="black">
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section id="delivery-btn-page" class="hidden grub-on-card">
@@ -119,48 +138,72 @@
         <input
         type="search"
         name="delivery-address"
-        id=""
+        id="address"
         placeholder="Enter delivery address"
         />
-        <input type="button" value="Search" />
-        <select name="delivery-time" id="">
-          <option value="delivery-time-opt">option</option>
-          <option value="delivery-time-opt">option</option>
-          <option value="delivery-time-opt">option</option>
+        <input id="address-btn" type="button" value="Search" onclick="searchAddress(event)" />
+        <select name="delivery-time" id="delivery-options">
         </select>
       </form>
+      <div id="map"></div>
     </section>
     <section id="on-time-btn-page" class="hidden grub-on-card">
       <h2 class="black">No one likes waiting</h2>
-      <p class="black">Let us settle the question of delays</p>
+      <h3 class="black">Let us settle the question of delays</h3>
+      <div id="figures-wrapper">
+        <img class="img-icons" src="https://img.icons8.com/windows/256/delivery-time.png" alt="IMG">
+        <div id="text-wrapper">
+          <h3 class="black">Satisfaction Guaranteed!</h3>
+          <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis orci eu enim commodo finibus at vel sapien. In euismod, dolor quis ultricies malesuada, velit nisl ultricies dolor, id iaculis metus est at risus.</p>
+        </div>
+        <img class="img-icons" src="https://img.icons8.com/windows/256/instagram-check-mark.png" alt="IMG">
+      </div>
     </section>
+    <section id="action-sect">
+      <h2>Ready to give it a go?</h2>
+      <div id="action-btn">
+        <button id="action">
+          <a href="#" id="action-link">Get Started</a>
+        </button>
+      </div>
+    </section>
+  </div>
+  <br>
     <footer id="footer">
-      <div class="end-card">
-        <p>end title of something</p>
-        <figure>
-          <img src="" alt="PLACE">
-        </figure>
-      </div>
-      <div class="end-card">
-        <p>end title of something</p>
-        <figure>
-          <img src="" alt="PLACE">
-        </figure>
-      </div>
-      <div class="end-card">
-        <p>end title of something</p>
-        <figure>
-          <img src="" alt="PLACE">
-        </figure>
-      </div>
-      <div class="end-card">
-        <p>end title of something</p>
-        <figure>
-          <img src="" alt="PLACE">
-        </figure>
-      </div>
+      <section id="footer-cards-wrapper">
+        <div class="end-card">
+          <a href="#">Returning User</a>
+          <figure>
+            <img class="footer-icons" src="https://img.icons8.com/windows/256/user.png" alt="PLACE">
+          </figure>
+        </div>
+        <div class="end-card">
+          <a href="#">Data Privacy</a>
+          <figure>
+            <img class="footer-icons" src="https://img.icons8.com/windows/256/privacy.png" alt="PLACE">
+          </figure>
+        </div>
+        <div class="end-card">
+          <a href="#">Menu Suggestions</a>
+          <figure>
+            <img class="footer-icons" src="https://img.icons8.com/windows/256/cutlery.png" alt="PLACE">
+          </figure>
+        </div>
+        <div class="end-card">
+          <a href="#">Servicing Locations</a>
+          <figure>
+            <img class="footer-icons" src="https://img.icons8.com/windows/256/marker.png" alt="PLACE">
+          </figure>
+        </div>
+      </section>
+      <p id="credit-text">Design credits go to Awesomic, whose design this project was based off.
+        Check it out&nbsp 
+        <a target="_blank" href="https://dribbble.com/shots/21049441-EatsNow-Food-Delivery-Service">here</a>
+      </p>
     </footer>
     <script src="./script.js"></script>
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
   </body>
   </html>
   
