@@ -1,0 +1,330 @@
+/* Adding fonts into directory */
+@font-face {
+    font-family: 'Wisteria';
+    src: url(./assets/Wisteria.ttf) format('truetype');   
+}
+@font-face {
+    font-family: 'Louis';
+    src: url(./assets/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+}
+
+*{
+    color: black;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(././assets/floral.png);
+    margin: 50px 125px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Wisteria';
+    font-weight: normal;
+}
+
+p, a, button {
+    font-family: 'Louis';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: ease-out 300ms;
+}
+
+button {
+    transition: ease-out 300ms;
+}
+
+
+.nav-bar {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2.0px;
+}
+
+.nav-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
+
+.nav-link {
+    text-decoration: none;
+    letter-spacing: 2.0px;
+    line-height: 150%;
+}
+
+.underline:hover {
+    transform: scale(105%);
+    transition: ease-in-out 180ms;
+    text-decoration: black solid underline;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us {
+    background-color: transparent;
+    border-radius: 0px;
+    border-width: 3px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.0px;
+}
+
+.main-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: fit-content;
+    width: 67%;
+    max-width: 666px;
+}
+
+.txt-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.main-text {
+    font-kerning: 2.0px;
+    letter-spacing: 4.0px;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+ .line1 {
+    max-width: 43%;
+    margin-left: 16px;
+ }
+
+ .line2
+{
+    max-width: 32%;
+    margin-right: 16px;
+}
+
+ .txt1 {
+    max-width: fit-content;
+ }
+
+ .main-text-secondary {
+    margin-top: 50px;
+    width: 60%;
+ }
+
+ .subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3.0px;
+    margin-bottom: 16px;
+ }
+
+ .subtxt {
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    color: rgba(128, 128, 128, 0.529);
+    text-align: justify;
+    line-height: 20px;
+ }
+
+ .appointment {
+    margin-top: 50px;
+    background-color: black;
+    padding: 16px 48px;
+    box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.400);
+ }
+
+ .appt-link-btn {
+    color:azure;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.0px;
+ }
+
+ .main-img-container {
+    display: flex;
+ }
+
+ .arch-img-container {
+    margin-right: 50px;
+    height: 580px;
+    background-color:  blue;
+    border-radius: 250px 250px 0 0;
+    overflow: hidden;
+ }
+
+ #listening {
+    height: 100%;
+    width: auto;
+ }
+
+ .play-btn-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 75%;
+    left: -200px;
+    z-index: 1;
+    border-radius: 24px;
+    background-color: rgba(169, 169, 169, 0.309);
+    backdrop-filter: blur(100%);
+    width: 48px;
+    height: 48px;
+    transition: ease 300ms;
+ }
+ 
+ .play-btn-container:hover {
+    transform: scale(1.07);
+    transition: ease 300ms;
+ }
+
+ #play-btn {
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+    transition: ease 300ms;
+    animation: shakePlay infinite 3s ease-in-out alternate-reverse;
+ }
+
+ .play-img-container {
+    height: 200px;
+    position: absolute;
+    right: 475px;
+    bottom: 25px;  
+ }
+
+ #three-people {
+    height: 100%;
+    box-shadow: 5px 10px 50px black;
+ }
+
+ .vertical-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    top: 60vh;
+ }
+
+ .vertical-text {
+    margin-top: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+ }
+
+ #circle {
+    width: 6px;
+    height: 6px;
+ }
+
+ #arrow-container {
+    transform: rotate(90deg);
+    width: fit-content;
+    height: fit-content;
+ }
+
+ #arrow_img {
+    height: 32px;
+    width: 48px;
+    animation: scrollQ infinite ease 1500ms;
+    animation-direction: alternate-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #gray-circle {
+    margin-top: 20px;
+    position: relative;
+    bottom: 15px;
+    z-index: -1;
+    width: 48px;
+    height: 48px;
+    filter: invert(50%) sepia(10%) saturate(703%) hue-rotate(169deg) brightness(97%) contrast(85%);
+    opacity: 45%;
+}
+
+/* SECTION 2 -- SERVICES */
+
+.services {
+    margin-top: 100px;
+}
+
+.services-img-container {
+    height: 320px;
+    width: 480px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    overflow: hidden;
+}
+
+#seated-counsel {
+    height: 100%;
+    width: 100%;
+}
+
+/* ANIMATIONS */
+
+@keyframes scrollQ {
+    
+    from {
+        transform: rotate(90deg);
+        transform: translateX(20%);
+    }
+
+    to {
+        transform: rotate(90deg);
+        transform: translateX(70%);
+    }
+}
+
+@keyframes shakePlay {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(5deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
