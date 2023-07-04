@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+section {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.banner p {
+  font-size: 18px;
+  color: #666;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+}
+
+.filter-option label {
+  margin-right: 5px;
+}
+
+.filter-option select,
+.filter-option input[type="checkbox"] {
+  padding: 5px;
+}
+
+.spacer {
+  margin: 20px 0px;
+}
+
+#featured-products,
+#products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: max-content;
+}
+
+.card {
+  min-width: 30%;
+  max-width: 30%;
+  max-height: 380px;
+  margin: 30px 5px;
+  border: none;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.product-img-container {
+  min-width: 120px;
+  min-height: 120px;
+  margin: 0 auto;
+}
+
+.card-img {
+  object-fit: fill;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-price-container {
+    display: flex;
+    width: 100%;
+}
+
+.card-sale-price {
+    margin-left: 5%;
+}
+
+.card-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.add-to-cart-button {
+  margin: 0 auto;
+  width: 60%;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-link {
+  color: #333;
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-info p {
+  margin-bottom: 5px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left , .right{
+  width: 48%;
+  min-height: 75vh;
+  margin: 20px 0;
+}
+
+.right {
+    padding: 10% 0;
+}
+
+.product-image-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-name {
+  margin-bottom: 50px;
+}
+
+.right button {
+    margin: 0 15px;
+}
+
+.card-review img {
+    width: 20px;
+    height: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-container-about {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10%;
+    margin: 100px 30px;
+}
+
+.img-right {
+    width: 70%;
+    height: inherit;
+}
+
+.img-left {
+    height: inherit;
+    width: 30%;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.main-about {
+    text-align: center;
+}
+
+.title-about {
+    margin: 20px 0;
+}
+
+.title-description {
+    width: 75%;
+    margin: 30px auto;
+    line-height: 175%;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.value-text-container {
+    width: 30%;
+}
+
+.value-text-title {
+    margin-bottom: 50px;
+}
+
+.value-text {
+    letter-spacing: 1.2px;
+    line-height: 200%;
+}
+
+.form-wrapper {
+    width: 60%;
+    margin: 100px auto;
+}
+
+#contact h1 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.icon-cart-container {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
