@@ -1,7 +1,7 @@
 let productId = localStorage.getItem("selectedCardId") || "";
 localStorage.setItem("selectedCardId", productId);
 
-fetch("MOCK_DATA (3).json")
+fetch("./MOCK_DATA (3).json")
   .then((response) => response.json())
   .then((data) => {
     const featuredProductsSection =
