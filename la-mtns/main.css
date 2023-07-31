@@ -1,0 +1,18 @@
+#main-page {
+    background: url(./assets/Image.png) no-repeat top center/cover;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.nav-link {
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    padding-bottom: 1%;
+    border-bottom: solid white 1px;
+}
+
+#home-bg--figure {
+    width: 25%;
+}

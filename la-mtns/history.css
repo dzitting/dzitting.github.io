@@ -1,0 +1,209 @@
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+nav {
+  width: 70%;
+}
+
+main {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#one {
+  height: 100vh;
+  width: inherit;
+  background: url(./assets/peak.png) no-repeat top;
+  background-size: cover;
+  background-position-y: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#text-container-01 {
+  position: relative;
+  top: -50%;
+  left: 15%;
+  height: fit-content;
+}
+
+#text-container-01 figure {
+  width: 144px;
+  height: 124px;
+}
+
+#one h2 {
+  position: relative;
+  top: -30%;
+  left: 8%;
+}
+
+#one p {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  top: -20%;
+  left: 5%;
+}
+
+#carousel-wrapper {
+  background-color: #414f6bb8;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#two {
+  background: url("./assets/snowy-tab1.png") no-repeat;
+  background-position-y: 20%;
+}
+
+#two-text--container {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+}
+
+#two figure {
+  width: 144px;
+  height: 124px;
+  position: relative;
+  left: 14%;
+  top: 18%;
+}
+
+#two h2 {
+  position: relative;
+  top: -17%;
+  left: 23.5%;
+}
+
+#two p {
+  position: relative;
+  left: 30%;
+  top: -45%;
+  width: 611px;
+}
+
+#sub-nav {
+  background-color: #414f6b;
+  height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20%;
+}
+
+#sub-nav a {
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#link1::before {
+  background-color: white;
+  color: #414f6b;
+}
+
+
+/* #sub-nav a:focus, */
+/* #sub-nav a:active, */
+/* #sub-nav a::after, */
+.active {
+  background-color: white;
+  color: #414f6b;
+}
+
+th {
+  font-size: 32px;
+  text-align: center;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  padding: 0 50px 0 0;
+  color: #414f6b;
+  margin-top: 20px;
+}
+
+#table-div {
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 250px;
+  width: 20%;
+  position: absolute;
+  top: 140%;
+  left: 30%;
+}
+
+table {
+  padding: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#carousel-wrapper {
+  overflow: hidden;
+}
+
+#carousel-wrapper figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  animation: slide 5s infinite linear;
+}
+
+.visible {
+    visibility: visible;
+    z-index: 2;
+}
+
+.not-visible {
+    visibility: hidden;
+    z-index: -1;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #414f6b;
+}
+
+footer section {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section img {
+    width: 60%;
+}

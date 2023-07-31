@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    color: white;
+    font-family: Oswald;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.blue {
+    color: #414f6b;
+}
+
+.centered-align {
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+}
+
+p {
+    color: gray;
+}
+
+a {
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 62px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
