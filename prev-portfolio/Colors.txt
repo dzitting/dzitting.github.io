@@ -1,0 +1,53 @@
+/* CSS HEX */
+--dark-liver: #5a494eff;
+--baby-pink: #ebbab9ff;
+--xanadu: #739687ff;
+
+/* CSS HSL */
+--dark-liver: hsla(342, 10%, 32%, 1);
+--baby-pink: hsla(1, 56%, 82%, 1);
+--xanadu: hsla(154, 14%, 52%, 1);
+
+/* SCSS HEX */
+$dark-liver: #5a494eff;
+$baby-pink: #ebbab9ff;
+$xanadu: #739687ff;
+
+/* SCSS HSL */
+$dark-liver: hsla(342, 10%, 32%, 1);
+$baby-pink: hsla(1, 56%, 82%, 1);
+$xanadu: hsla(154, 14%, 52%, 1);
+
+/* SCSS RGB */
+$dark-liver: rgba(90, 73, 78, 1);
+$baby-pink: rgba(235, 186, 185, 1);
+$xanadu: rgba(115, 150, 135, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-right: linear-gradient(90deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-bottom: linear-gradient(180deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-left: linear-gradient(270deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-top-right: linear-gradient(45deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-bottom-right: linear-gradient(135deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-top-left: linear-gradient(225deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-bottom-left: linear-gradient(315deg, #5a494eff, #ebbab9ff, #739687ff);
+$gradient-radial: radial-gradient(#5a494eff, #ebbab9ff, #739687ff);
+
+
+
+.success-state-message {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+

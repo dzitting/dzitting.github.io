@@ -58,3 +58,14 @@ nav {
     justify-content: space-between;
     width: 20%;
 }
+
+#return {
+    position: fixed;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+  
+  #logo-img {
+    width: 50px;
+  }

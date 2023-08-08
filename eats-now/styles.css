@@ -784,3 +784,14 @@ animation
 }
 
 /* Apply the animation to an element */
+
+#return {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+#logo-img {
+  width: 50px;
+}

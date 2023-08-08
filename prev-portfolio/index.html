@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denise Zitting | Frontend Developer</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/965037c8d0.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("B_innLF_jKi5201BP");
+    })();
+  </script>
+</head>
+
+<body>
+
+  <a href="#my-projects" class="scrollbar click">
+    <div class="scroll"></div>
+  </a>
+  <section id="root" onmousemove="moveBackground(event)">
+    <div id="landing-page">
+      <nav>
+        <img src="./assets/DZCodes.svg" alt="logo" id="logo" target="" />
+        <div id="nav__bar">
+          <ul id="nav__list">
+            <li class="nav__link">
+              <a href="#" onclick="toggleModal()" class="nav__link--anchor hover__black">About</a>
+            </li>
+            <li class="nav__link">
+              <a href="#my-projects" class="nav__link--anchor hover__black">Projects</a>
+            </li>
+            <li class="nav__link">
+              <a href="#" onclick="toggleModal()" class="nav__link--anchor hover__black">Contact</a>
+            </li>
+            <li class="nav__link">
+              <i onclick="toggleContrast()" class="fa-solid fa-circle-half-stroke click"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="main">
+        <div class="main__heading">
+          <h1 id="denise">Hey there, <b class="highlight">I'm Denise...</b class="highlight"></h1>
+          <p class="heading__subtxt">
+            ... a passionate
+            <b class="highlight">Frontend Software Engineer</b class="highlight"> dedicated to
+            building web applications with great user experiences. Here's a bit more <b class="highlight click" onclick="toggleModal()">about me.</b class="highlight">
+          </p>
+          <div class="socials">
+            <a target="_blank" href="https://www.linkedin.com/in/denise-zitting101/"><i class="fa-brands fa-linkedin social__link click" ></i></a>
+            <a target="_blank" href="https://github.com/dzitting"><i class="fa-brands fa-square-github social__link click" ></i></a> 
+            <a target="_blank" href="./Resume_DeniseZitting.pdf"><i class="fa-solid fa-file-pdf social__link click" ></i></a> 
+          </div>
+        </div>
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/triangle.svg" class="shape shape--2">
+      <img src="./assets/squiggly.svg" class="shape shape--3">
+      <img src="./assets/semi circle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/triangle.svg" class="shape shape--6">
+      <img src="./assets/squiggly.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
+      </section>
+
+      <section id="my-projects">
+
+        <div class="row">
+          <h1 class="opener">Here are some of my<b class="highlight">&nbsp projects</b></h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img class="project__img" src="./assets/DesktopChromeExt.jpg" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Chrome Extension: ClearStartBeta</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, API, git
+                  </h4>
+                  <p class="project__description--para">ClearStartBeta is based on a concept of a popular chrome extension called: Momentum. <br> It overrides the newtab to present a focus, productivity driven start to web browsing.</p>
+                  <div class="project__description--links">
+                    <a title="Github Project Link" href="https://github.com/dzitting/ClearStartBeta" class="project__description--link
+                    social__link" target="_blank"><i class="fab fa-square-github"></i></a>
+                    <a title="LinkedIn Profile" href="https://www.linkedin.com/in/denise-zitting101/" class="project__description--link social__link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a title="Project Link" href="https://chrome.google.com/webstore/detail/clearstartbeta/ffnhggjkimnpjjmjbdoghlejfaehaimh" class="project__description--link social__link" target="_blank"><i class="fa-solid fa-link"></i></i></a>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img class="project__img" src="./assets/UnityGame.jpg" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Demo Unity Project</h3>
+                  <h4 class="project__description--sub-title">
+                    C#, Unity Engine, InnoInstall, git
+                  </h4>
+                  <p class="project__description--para">Please note, this is a current project and is not yet complete. Feel free to check out the current edition on Github</p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/dzitting/Top-Down-Game-Epitome" class="project__description--link
+                    social__link"><i class="fab fa-square-github"></i></a>
+                    <a title="LinkedIn Profile" href="https://www.linkedin.com/in/denise-zitting101/" class="project__description--link social__link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a title="Download" download href="./assets/GAME.zip" class="project__description--link social__link"><i class="fas fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="project">
+              <div class="project__wrapper">
+                <img class="project__img" src="./assets/blinker mockup.png" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, React, Python
+                  </h4>
+                  <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia aut magni odio fugiat quam optio a harum quisquam. Nobis, facere.</p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link
+                    social__link"><i class="fab fa-square-github"></i></a>
+                    <a title="LinkedIn Profile" href="https://www.linkedin.com/in/denise-zitting101/" class="project__description--link social__link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="project__description--link social__link"><i class="fas fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+
+          </ul>
+
+        </div>
+        <div class="modal-wrapper">
+          <div class="modal__half modal__about">
+            <h3 class="modal__title--about">Here's a bit about me.</h3>
+            <p class="modal__para">
+              I'm a 23 year-old frontend software engineer passionate about <b class="highlight">great user
+                experiences.</b>
+              <br>
+              I'm knowledgable in <b class="highlight">HTML, CSS, Javascript, and React</b> with experience in many
+              other languages including <b class="highlight"> Python, C#, C++</b> and others.
+              <br>
+              I <b class="highlight">developed a personal game</b> through Unity Game Engine and <b class="highlight">
+                setup Virtual Machines through Linux:
+                Ubuntu, and Kali.</b>
+            </p>
+            <div class="modal__lanuages">
+              <figure class="modal__lanuage--figure">
+                <img class="modal__language--img"
+                  src="https://mpng.subpng.com/20180420/xwe/kisspng-web-development-cascading-style-sheets-css3-comput-css-5ada20be146fc2.8807141415242446700837.jpg"
+                  alt="" srcset="">
+              </figure class="modal__lanuage--figure">
+              <figure class="modal__lanuage--figure">
+                <img class="modal__language--img"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAxlBMVEXjTyb////vZSrr6+vpWijtYSnr8PHjQwvuWg7vYR761czjRxbowrz++fb5y7/mnpDhPgDr5ePjSx7ouLD2sZ3leGDiRhXiSRvuVwDmVSfvYSH76OTiQQb64t3r8/TrXSj98/Dyt6vtm4vslILxrqHq29jlXjzmZkXkWDP0wbbqg2zzk3H86OH31s/riXXqgWrpzsjyi2jnblH1qJDpy8T3varkakznrqPxeEn2rpbxflP3u6jjUyz0nYD4xbXoTgrwcDzyhVzihsipAAANfUlEQVR4nN2de1caSROHwcsMgsg4CsOrQFAU72KMUZNVk3z/L/XOqHuC3VX16+kLs1j/7TkbMk+6nX6oqi5r9fnoprXlj0HzA1Ptw39dZ1U/nodIhgLhYavqx/MQyb5AeNCr+vE8RK8tEJ7FVT+eh0jrAmFzUPXjeYhTiXCYVP147pHeSoT7n4Awu5YI25/gTdM6lAjrn+DE7x2JhKfLjxifiYS3y0+oSJtK+Am0LbkSCT+BtinSphIeLf/LNGmLhJ9A27K6SBhe29bWPcf/Pn5+OpUJr4JLzdqK51AJb2XC8NoWnHAmE7aXj1D5/GwiE4bXttCEqrRphNPQiKEJ4wNAGFzbfBOuq4RbgHAWWttCE6rSphFOQmubb8IvKuE+IAyubb4J11TCMSA8CK1toQnjOiDcWjZC5cBXc4k6YXBtC0yYniDC4NoWmlCVNo1wHPrLhW9C5eM1adMI68v2c6h8fK8DCZfNaVTCA0h4EhjRMyGUNp1wttyEmrTphJPAYuqZUJO2ISTsBNa20ISqtOmEocvAnglVaWu1IWFobfNMqErbqcqjE4bWtrCE6T0mxNoWO8WvhkvsIcIuJhwjwnhn0yWaLnH1rCIqD6cWgCnCNvqSnxxHLqE9Qan4tiET6tKmE9ZPAeHgZtUl3AifEaGaS6QI74HUxJtRdYRfwS5VC8AkIerei3cqJPypEGJpIwhRGbj3UCHhb2UJsbQRhEjbWp0KCdXDAksbQYjyia3D6gjb6otGyyXqf0YnRGXg7Lo6wnHDByHStvR2VBnhsK8QYi0lCFH3XjqtjrCpriGWNoIQattTdbv0RSVUHo2QNoKwjgiz7coIfwClUbv2LAnj48oILaSNIkRimjiJqROhKm1apk2XNooQapuTmDoRPq7IhGrXHkOItM1NTJ0I1U1qIG0UIerecxNTJ0L1ODSQNoowrLa5AF6qhFp5VMu0kYRhtc2FcIikjaChCFH3Xtp1kRoXwi2kNGrXHkMIte2kqjXUlAZ17TGEUNtqVRHuggM/OzckRHn9pCpClGmjpI0irKMlTFgx3cbRto/6BchDUdJGEqLuPVbbokmcofiyYR8raigPpnXtcYSoe29wx2zTyKA057NuYSJtJOG5rbZFD9USUtJGElprW7SJS3M+CWHXHkcItY3LJ0Z3uBvHJ6GWhyKkjSRE3Xu8th3j4mNQQgKGJLTXtu3FEqqZtidTQqxtrJjiRo6AhEQBmCGEZeBTVmpQBiQoISltJCG8dJFyUhOh0pxfQuWj9a49jhBn2zjCER6sEZCQKABzhE/gKRMunxjhG5oBCUlpowkdtA22+nskxF17LGFIbQtISBSAOULUvcdr2w7UNo+ERtJGE1qXgQ3ENCBhTOQSGUKobRPuQLyBYuqRUJW2lNJSmhB176UzTmqOF0loJG00ISwDs9q2vchdCq9a8IS4e48jHC3yXWpQAOYIx2glEpYQiqlHQuWTaWmjCdvIvdhs2wiKaThCWtpoQgdtO6+QkMolcoTo0gXbnxjBVv9whFQBmCW07t6LOkmwHmEV0EzaGEJrbVu92QGxZR0qoUkBmCV06N4L1yOsLqJJAZglRJcueG2DYQ0IC8Bkpo0jtNe2cIRax5dJAZglDNi9Z034HZVHaWljCHH33uJ3qVY8NJM2hhCXgW0B7QlREzvVtccT2mfbwhGqLd5GBWCeEC0hq23hCLX6qPJIjLRxhFDb7hZOqDmNuq1oaeMIw3Xv2QJqLd5GBWCeMNylC1vCS6g0tLRxhKgMbH/pwpbwChKSuUSWMJy22RJqHV+q0vTITBtLGK57z5ZQUxotl8j8QYYQloGttc2WUOv4UpWGuGohEcKRyaeLJtSa2E269gRCmE/sLZrQVto4Qjgy2VrbbAn/AEJO2jhCOOJkYKtttoRISzlpYwnRyGTr28C2hOoSmly1EAlRGdha2ywB22oOw1TaWMJg2mZJOIYXEehcIk8Iu/eOFkuotembShtLiC9djBY6cQDmociuPYkQaVt637GLo10pvnOEWpu+qbSxhHBkctqyit4vqc258ZV7Tiht1FULkTDYEBexMrPxjXtOmGnjpI0lDDZ7Tybc5Z4TaWmmzdpDhMFGJouEjRfuOaG00QVggTDYZDqZkDu27aWNJww1MlkmZHIt+rgIs649kTDUyGSRsE8XyIhxEWZdeyIh6t4LQ8g9DcwlstLGE4YamSy/S7mn0YqHxtLGE4YamSwSPnJPo0mbYQFYIsQjk1MurAn3WKWBuURtQDImxLP3ukzITUMS4cYz9zSoPMprKU8Ita21OqLjTvy3EQl/cE+jDcQwLABLhFDb2PEYco+pRNhgv1rAXCIrbTwhHJnM3rOULz+JhOyhBnOJrLTxhHBkMp+psSdkDzV1iplh155MCACFzi/xJJUI++yhBrX0wIIQlYH5hn1RacU1ZA81VOLmpU0gRCOT+YZ9sYAsnvjcs8BcIi9tAiHq3mNLiJGotBLhb+5Z9qG0sV9KBELUvZeec4Si0gqEez+5Z8G5RHZ/C4SoDMzeJJUvP0mEF9yzwFyiPiDZgBB273EDQOTLTwIhn4eCuUSuPCoSQm3j5rbJV4MkQjYPBXOJ5P1YRIi1jQYE2iYQ8nko2649mRB277FXEkRtkwjZPBQa+cEWgEVCg5HJDOG25Zumz77yUS5RkDaB0GFksvSnJEL2lW+fSxQJrUcmi1eDJEL2UbT/VX0UrgAsE1pfuhCvBklOwz0JzCUK0iYRwjIwVyQddYUfRJ5wj81DabnEEtImEdrflX2YJjH3z8MQ7jX6v9njEOcSeWmTCO2796LoeOf6KelRm5Ug3Nvor1y8sN8NTQrA/J+VCGEZWLp0EY2im6PuYNBSKddUukb/z66wyYqAuURLQudLF9Fo9a5zEn/csPOEG43G4zf2mP8b8KqFoKUSoY+RyVE02t65rs1t2H8J86258fwi/PzMBcwlsgVgmdDXyOSc8vhhVkveNuza29bc+Pr90oiuCDRcV5I2iRBeumCHuJAb9qZzO4hb6VqxNX8I5xcRSEvZrj1EiDKmJUcm5xt2czKdPm/x31aZgLlEQdpEQtS9V/5aiWXHkMJn3rWHCJG2sUNcpLAhtO7aQ4RwZLJNf6IFIM4lSuepRAi792yGQlsQOkmbSIjKwFb9iRaEcHwwNSDZiBBpm9VQaAtC2/uxmBB171ldK7EghOOD2a49RAi1zea+swUhzCVK0iYSIm1L7xezhiiXSM/aMyGEly746YJeCVEBWJQ2kRAWSVuLIXSSNpkQjkxeHZVmtCBEuUS+aw8S4u692cPxKCpFWZJuvPW8gi6TiNImE+LuvbSXPE12tktQlsG7+vHYb+gzrktJm0yItO0tsji+79xFhhvWlG7/+9f8e7L2OyuLMO/ag4TG3XtpaxDnGzYyWEoTumJr9vXfyMkSil84RULcvTdP2RtMDzfhuwfiDXd/NoitORdlMm2AEF660JYyTrpHN+KGFZ/m8p+LRp/emnNhNmvPiBDelSWXMnm63tlmNyz7l7WLrQnpCEJZ2mRC20sXWZzk7x56wzL/lrs/qbemEaEsbTKhw6WL/N2Tdal3j/63jF8u9pi3Jh3qvyfftQcJYT4RUPaS6WRz++NSKn9D89uj8NY0IpQKwJAQzd7DkFk8uO3czG3YuU+//OdPo9Ti0YSytAFCL5cu3t89797z/sn5e+W32XsFE/Jde5jQ26WL/N0zfXv3FB873CVtzDDKFIAhIZyCWCLyd0+av3vaLxeGh4IxoShtgNDgt6qUo+wlv8q+V7QwG5BsSFhK28zCffal2YBkQ0J86eI/QChLGyAMcFfWndD8qoUBYYC7sv4Jha49TAhHJldBqHwgkDZACEcm/wcIgbQBQti9t3jCdfWwEK5amBCiSxcLJvyifvmtgQIwJsS/VWVhhOtrBF4NShsi9KltDoTr1OL9SwgaqgChb22zIfyilQs/EoKuI0CIuvdCE3Jbc55QJkCE/rWtBKGwNefDjdC/thkSgq35N5C0IUKbfKIzocHWnCME0oYI8chkz4TSW5MMsWvPgNAx21aSsNTivYdcADYg9A3IEtrQFYGkDRJOY89WQxKW3Zp/I0uAtEHC/aPbZOBTbDRC28V7zfrUrs9QLycirBepzckp3XfvTFj6vfI3WoP49ggImylhEcODbqL33bsR2tO91ta3zHrETQmLaE6miftP5Zrj1qy1klb3QE6R2hLmsZ8vZeK2lGsuWzOLk6fDZrku6nKERTQPnZbSZWtmszKLZ02Yx/7ZLPb37jGJ17pHuQZ/J8Iirjon/PUtr/F2KBi+VzwS5jE+O89CL2U2GNwbHQpBCIsIuZTF4hkfCsEI68VSfrjY5ClaieGJjsIDYRHDI59L+XqilzwU2PBEWC+WcsJcqiwXZU90FP4Iixjmnh5n9pTF4pU90VH4Jaw7eHrqe/HewzthEeU9PT/RTw+v/C7eewQhzKPdPDRdynxrpudn/hfvPUIRFpF7eg95ehYPTix1zDBCEtZfl5L39Fcdcz7RUQQmLGL/YEbInfF3dNdYAGERV4fzYxa8nugoFkRYf/X0NF/K/FDIQhwKbCyOsIjcCAK/V/T4P93btBKFOWdjAAAAAElFTkSuQmCC"
+                  alt="" srcset="">
+              </figure class="modal__lanuage--figure">
+              <figure class="modal__lanuage--figure">
+                <img class="modal__language--img"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
+                  alt="" srcset="">
+              </figure class="modal__lanuage--figure">
+              <figure class="modal__lanuage--figure">
+                <img class="modal__language--img"
+                  src="https://coder.clothing/images/stories/virtuemart/product/reactjs-logo-sticker.jpg" alt=""
+                  srcset="">
+              </figure class="modal__lanuage--figure">
+            </div>
+          </div>
+          <div class="modal__half modal__contact">
+            <h3 class="modal__title--contact">Let's Chat!</h3>
+            <h4 class="modal__subtitle--contact">I'm currently open to new opportunities.</h4>
+            <form action="" class="contact__form" onsubmit="contact(event)">
+              <div class="form__item">
+                <label class="form__item--label">Name</label>
+                <input type="text" name="user_name" required placeholder="Enter your name">
+                <div class="form__item">
+                  <label for="" class="form__item--label">Email</label>
+                  <input type="email" name="user_email" placeholder="Email">
+                  <div class="form__item">
+                    <label for="" class="form__item--label">Message</label>
+                    <textarea name="message" placeholder="Type your message" class="message"></textarea>
+                  </div>
+                  <button id="contact__submit" class="form__submit">Send it my way</button>
+            </form>
+            <div class="hide modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+            <div class="hide modal__sbackup modal__overlay modal__overlay--success">
+              <h2 class="success-state-message">Your message was sent!</h2>
+            </div>
+            <div onclick="toggleModal()" class="fas fa-times modal__exit click"></div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section id="footer">
+        <footer class="footer__links">
+          <figure class="footer__logo-container"><img class="footer__logo" src="./assets/DZCodes.svg" alt=""></figure>
+          <div class="list__container">
+            <ul class="footer__list">
+              <li class="footer__link "><a href="https://github.com/dzitting" target="_blank"
+                  class="footer__link--anchor hover__white">GitHub</a></li>
+              <li class="footer__link "><a target="_blank" href="https://www.linkedin.com/in/denise-zitting101/" class="footer__link--anchor hover__white">LinkedIn</a></li>
+              <li class="footer__link "><a href="#" onclick="toggleModal()" class="footer__link--anchor hover__white">Contact</a></li>
+              <li class="footer__link"><a target="_black" href="./assets/PlaceHolderRes.pdf" class="footer__link--anchor hover__white">Resume</a></li>
+            </ul>
+          </div>
+          <div class="sign-off">
+            <p class="signed">Made by Denise Zitting</p>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </section>
+  <i class="fa-solid fa-envelope click" onclick="toggleModal()"></i>
+  <script src="./index.js"></script>
+  <figure id="return">
+    <a href="../index.html">
+      <img src="../DZCodes.svg" alt="logo-image" id="logo-img">
+    </a>
+  </figure>
+</body>
+
+</html>

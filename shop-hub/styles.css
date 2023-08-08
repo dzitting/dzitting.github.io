@@ -293,3 +293,14 @@ footer {
     object-fit: contain;
     object-position: center center;
 }
+
+#return {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+#logo-img {
+  width: 50px;
+}
